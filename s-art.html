@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>S-Art</title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+			box-sizing:border-box;
+			text-decoration:none;
+			background-color:black;
+		}
+		.s-art{
+			height:50px;
+			width:50px;
+			background-color:white;
+			animation-name:asp;
+			margin-left:600px;
+			animation-duration:5s;
+			animation-direction: alternate;
+			animation-iteration-count:50000;
+			border-radius:50%;
+			border:1px solid red;
+			position: relative;
+		}
+
+		@keyframes asp{
+			0%{background-color:red; right:0px; top:0px;}
+			20%{background-image:url('Images/father.jpg'); right:400px; top:0px;}
+			40%{background-color: blue; right:400px; top:250px;}
+			60%{background-image:url('Images/ap.jpg'); right:0px; top:250px;}
+			80%{background-color: green; right:0px; top:500px;}
+			100%{background-image:url('Images/p.jpeg'); right:400px; top:500px;}
+		}
+	</style>
+</head>
+<body>
+	<div class="s-art">
+		
+	</div>
+</body>
+</html>
